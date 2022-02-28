@@ -1,0 +1,705 @@
+*{
+   
+    color: #f2f5f7;
+   
+    font-weight: 400;
+    font-family: var(--main-font);
+    /* font-size: 18px; */
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+:root{
+    --main-black: #161516;
+    --secondary-black: #1B1B19;
+    --ash:#23272A;
+    --main-white:#ffffff;
+
+    --grey-dark: #282828;
+    --grey-medium: #7B797B;
+    --grey-light: #ACA7A7;
+
+    --accent-one:#73809F;
+    --accent-two:#212A44;
+    --accent-three:#FFC706;
+    --accent-four:#236DFC;
+
+    --main-font: 'Nunito', sans-serif;
+    --secondary-font: 'Lora', serif;
+
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--main-black);
+}
+
+a {
+    text-decoration: none;
+}
+.sectionGap {
+    margin-top: 160px;
+}
+
+/* Text */
+
+.greyText {
+    color: var(--grey-medium);
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+}
+
+h4 {
+    font-family: var(--secondary-font);
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+.imgWidth {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    row-gap: 160px;
+}
+
+nav{
+    height: 6rem !important;
+    overflow: hidden !important;
+    display: flex !important;
+    z-index: 10;
+    margin: 0 auto!important;
+    margin-bottom: 6rem !important;
+    top:0 !important;
+    background-color: var(--main-black);
+}
+
+/*Styling logo*/
+.logo{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.logoSmall {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.logoThick { 
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    justify-content: end;
+    align-items: center;
+    column-gap: 24px;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: var(--grey-medium);
+}
+.nav-links li a:hover {
+    color: var(--main-white);
+}
+.nav-links li a:active {
+    color: var(--main-white);
+}
+.nav-links li {
+    position: relative;
+}
+
+.activePage {
+    color: var(--main-white) !important;
+}
+
+/*Styling Buttons*/
+
+.button {
+    background-color: transparent;
+    border: none;
+    border-radius: 72px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.primaryButton{
+    border: 1px solid var(--main-white);
+}
+
+.underlinedButton {
+    text-decoration: underline;
+    margin-left: -24px;
+}
+
+.ghostButton {
+    border: 1px solid var(--main-black);
+}
+
+
+.button:hover {
+    color: var(--main-black);
+    background-color: var(--main-white);
+    border: 1px solid var(--main-white);
+    transition: all ease-in-out 1s;
+    text-decoration: none;
+}
+
+
+.socialButton {
+    padding: 8px;
+    font-size: 16px;  
+    border: 1px solid #161516;
+}
+
+.socialButton:hover {
+    border: 1px solid white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+footer {
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+    padding: 80px 0px !important;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+
+.centerClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+/* Styling Grey lines */
+
+.line:before {
+    content: '';
+    border-bottom: solid 1px var(--grey-medium);
+    width: 50%;
+    position: relative;
+    right:0;
+    top: -25px;
+    z-index: 1;
+}
+
+
+/* Grids and other styles */
+
+.heroSectionGrid {
+ display: flex;
+ gap: 6rem;
+ flex-direction: column-reverse;
+}
+.heroImage {
+    width: 100%;
+    height: auto;
+}
+
+.flexGrid{
+    /* display: flex; */
+    flex-direction: column;
+    row-gap: 160px;
+}
+
+/* Styling Skill&references */
+
+.skillsRefs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+
+.skillBox {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    background-color: var(--ash) !important;
+    border-radius: 16px;
+    max-height: 140px;
+    width: 240px;
+
+}
+
+.skillBoxSubgrid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 48px;
+}
+
+.quotes {
+    position: relative;
+    display: flex;
+
+    /* 88px spacing */
+}
+
+#quoteIcon {
+    position: absolute;
+    right: -120px;
+    top: -120px;
+    z-index: -1;
+}
+
+.quoteBox {
+    background-color: var(--ash);
+    border-radius: 16px;
+    padding: 40px;
+}
+.quoteText {
+    font-style: italic;
+}
+
+.quoteTitle {
+    font-weight: 800;
+}
+
+.quoteSubgrid{
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+@media screen and (min-width: 1000px){
+
+h3 {
+    margin: 0;
+}    
+
+h6 {
+    margin: 0;
+    font-size: 32px;
+}
+.wordBreak {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    width: 70px;
+}
+
+.skillBox {
+    padding: 32px 0px;
+    width: 225px;
+}
+
+.skillBoxGrid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 46px;
+}
+
+.skillBoxText {
+    max-width: 400px!important;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    column-gap: 48px;
+    justify-content: space-between;
+}
+
+.quotes {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quoteBox {
+    max-width: 500px;
+}
+
+.featuredInnerGrid{
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    align-items: center;
+}
+
+.featuredInnerGrid img {
+    width: 500px;
+    height: auto;
+}
+
+.featuredInnerGrid h6 {
+    font-size: 48px;
+}
+
+.featuredInnerGrid button {
+
+    margin-top: 40px;
+}
+
+.centerClass button {
+    margin-top: 72px;
+}
+
+.heroSectionGrid {
+    display: flex;
+    gap: 6rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.heroImage {
+    width: 45%!important;
+    height: auto;
+}
+
+.heroSectionGrid .smallGridRowGap {
+    max-width: 590px;
+}
+
+.twoButtonGrid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+}
+
+@media screen and (max-width:1000px) and (min-width: 800px){
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .featuredText {
+        margin: 32px 0px;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 48px;
+    }
+
+    .skillBoxGrid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 48px;
+    }
+
+    .quotes {
+        position: relative;
+        display: flex;
+        flex-direction: column !important;
+        row-gap: 48px;
+    }
+}
+
+
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px) {
+
+    .hiddenEl {
+        display: none;
+    }
+
+    .heroSectionGrid {
+        margin-top: 136px;
+    }
+    
+    h3 {
+        margin-bottom:0px;
+    }
+    
+    h5 {
+        margin: 20px 0px;
+    }
+    
+    h6 {
+        margin: 0;
+    }
+
+    .featuredText h6 {
+        margin-top: 24px;
+    }
+    
+    .heroImage {
+        width: 80%;
+        height: auto;
+    }
+    
+    .heroSectionGrid {
+        display: flex;
+        gap: 0rem;
+    }
+    
+    .twoButtonGrid{
+        margin: 48px 0px 88px -15px;
+    }
+    
+    .fullyRespImg {
+        width: 95%;
+    }
+    
+    .underlinedButton {
+        margin: 20px 0px 50px -5px;
+    }
+    
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 48px;
+    }
+    
+    .skillBoxGrid {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+        align-items: center;
+    }
+    
+    .quotes {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+    
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 1s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+
+    /* Text for mobile */
+
+    *{
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 40px !important;
+        line-height: 42px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+    }
+
+    p .greyText {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links{
+        column-gap: 8px;
+    }
+
+
+
+    /* Grid for mobile */
+
+    .heroSectionGrid {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 104px;
+
+    }
+
+    .smallGridRowGap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .medGridRowGap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    .largeGridRowGap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 56px;
+    }
+
+    .medGridColGap {
+        display: flex;
+        flex-direction: row;
+        column-gap: 32px;
+    }
+
+    .featured {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    .skillsRefs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 48px;
+    }
+
+    .skillBox {
+        padding: 16px;
+    }
+
+    .skillBoxGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 24px; 
+    }
+
+
+    .skillBoxSubgrid {
+        row-gap: 24px;
+    }
+
+    .quotes {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+    
+
+    .quoteSubgrid{
+        row-gap: 24px;
+    }
+
+    /* Buttons and images */
+    .respImage {
+        width: 30%;
+        height: auto;
+    }
+
+    .fullyRespImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .heroImage {
+        width: 80%;
+        height: auto;
+    }
+
+    .twoButtonGrid {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 16px 24px;
+    }
+}

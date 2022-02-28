@@ -1,0 +1,148 @@
+.heroSectionGrid {
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    svg:nth-child(2) {
+        display: none;
+    }
+}
+
+
+/* Styles for all the case studies */
+
+p {
+    margin:0;
+    padding: 0;
+}
+
+article p {
+    min-width: 200px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    margin-top: 160px;
+}
+
+.articleContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.caseStudyHero {
+    border-radius: 16px;
+}
+
+.caseStudyTitle {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;    
+    text-decoration-line: underline;
+
+    /* May have to delete */
+    margin: 16px 0px;
+}
+
+.caseStudySubtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+   
+}
+
+.ashBackground {
+    background-color: var(--ash);
+    border-radius: 16px;
+    padding: 48px;
+    width: 100%;
+}
+
+.twoHorizontalElements {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.verCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.twoVerticalElements {
+    display: flex;
+    flex-direction: row;
+    column-gap: 88px;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+}
+
+.articleWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 48px;
+}
+
+.gifEl {
+    justify-content: space-between;
+}
+
+.gifEl p {
+    max-width: 700px;
+}
+
+/* Weird thing to keep the aspect ratio */
+
+.wireframeDesktop {
+    width: 512px;
+    height: 290px;
+}
+
+/* Media query */
+
+@media (max-width: 600px) {
+    .twoVerticalElements {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .contentContainer {
+        row-gap: 24px !important;
+        margin-top: 80px!important;
+    }
+}
+
+@media (max-width: 1350px) {
+    .verCenter {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    article img {
+        width: 80%;
+        height: auto;
+    }
+
+    .contentContainer {
+        row-gap: 40px;
+        margin-top: 120px;
+    }
+}
